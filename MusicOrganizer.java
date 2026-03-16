@@ -67,8 +67,8 @@ public class MusicOrganizer
         if(tracks.size() > 0) 
         {
             Random r = new Random(); //random object r
-            int store = r.nextInt(tracks.size()); // store saves index
-            playTrack(store);
+            int i = r.nextInt(tracks.size()); // i saves index
+            playTrack(i);
         }
     }
     
@@ -79,7 +79,7 @@ public class MusicOrganizer
         Random r = new Random();
         while(tempTracks.size() > 0) 
         {
-            
+            int i = r.nextInt(tempTracks.size());
         }
     }
     
