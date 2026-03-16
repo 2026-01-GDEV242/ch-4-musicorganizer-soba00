@@ -80,6 +80,11 @@ public class MusicOrganizer
         while(tempTracks.size() > 0) 
         {
             int i = r.nextInt(tempTracks.size());
+            Track t = tempTracks.get(i);
+            System.out.println("Now playing: " + t.getArtist() + " - " + t.getTitle());
+            player.playSample(t.getFilename());
+            tempTracks.remove(t);
+            
         }
     }
     
