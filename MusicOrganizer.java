@@ -72,6 +72,18 @@ public class MusicOrganizer
         }
     }
     
+    public void playShuffle()
+    {
+        //creates temporary copy that is randomized and shrinks with each play
+        ArrayList<Track> tempTracks = new ArrayList<>(tracks); 
+        Random r = new Random();
+        while(tempTracks.size() > 0) 
+        {
+            
+        }
+    }
+    
+    
     /**
      * Return the number of tracks in the collection.
      * @return The number of tracks in the collection.
